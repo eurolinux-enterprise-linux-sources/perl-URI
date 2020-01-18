@@ -1,6 +1,6 @@
 Name:           perl-URI
 Version:        1.60
-Release:        8%{?dist}
+Release:        9%{?dist}
 Summary:        A Perl module implementing URI parsing and manipulation
 Group:          Development/Libraries
 License:        GPL+ or Artistic
@@ -69,6 +69,9 @@ make test
 %{_mandir}/man3/URI::ldap.3pm*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.60-9
+- Mass rebuild 2013-12-27
+
 * Wed Feb 27 2013 Paul Howarth <paul@city-fan.org> - 1.60-8
 - Retain runtime dependency of perl(Business::ISBN) when bootstrapping; a
   better fix for the build dependency cycle was to drop LWP::Simple as a
